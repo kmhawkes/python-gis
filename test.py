@@ -11,7 +11,8 @@ token_secret    = 'wZPFX56O173NJNTsZ12GS91W3OQ'
 # search arguments
 search_location = 'san diego'
 search_term     = 'mexican restaurant'
-search_offsets  = [0, 20, 40]
+search_offsets  = [0]
+sort_mode       = 2
 
 # initialize an api object
 yelp_api = YelpAPI(consumer_key, consumer_secret, token, token_secret)
@@ -24,8 +25,9 @@ for offset in search_offsets:
                          location = search_location,
                          term     = search_term,
                          offset   = offset,
+                         sort     = sort_mode
                      )
 
     for biz in search_results.get('businesses'):
         #pprint(b)
-        print '%s - %s - %s' % ( biz.get('name'), biz.get('rating'), biz.get('location').get('cross_streets') )
+        print '%s - %s - %s - %s' % ( biz.get('name'), biz.get('rating'), biz.get('location').get('address'), biz.get('location').get('postal_code') )

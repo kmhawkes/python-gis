@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95c5714a-c786-4678-b4d6-1ab45600bf55" name="Default" comment="" />
+    <list default="true" id="95c5714a-c786-4678-b4d6-1ab45600bf55" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="python-gis.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +30,16 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="321" selection-end="321" vertical-scroll-proportion="0.047486033" vertical-offset="153" max-vertical-offset="527">
+            <state line="32" column="10" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.742029" vertical-offset="288" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="x.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -51,6 +64,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/x.py" />
         <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
@@ -144,6 +158,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python-gis" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="x" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python-gis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/x.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -270,12 +302,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.x" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.x" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +341,11 @@
       <created>1388294924646</created>
       <updated>1388294924646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="use multiple offsets">
+      <created>1388296291810</created>
+      <updated>1388296291810</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -342,15 +380,23 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="first addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="first addition" />
+    <MESSAGE value="use multiple offsets" />
+    <option name="LAST_COMMIT_MESSAGE" value="use multiple offsets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/x.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="321" selection-end="321" vertical-scroll-proportion="0.047486033" vertical-offset="153" max-vertical-offset="527">
+        <state line="32" column="10" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.742029" vertical-offset="288" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
