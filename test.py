@@ -2,6 +2,10 @@
 ####################
 from pprint import pprint
 import csv
+from pygeocoder import Geocoder
+import sys
+import os
+
 
 # Documentation: http://github.com/gfairchild/yelpapi
 from yelpapi import YelpAPI
@@ -27,7 +31,7 @@ sort_mode       = 2
 yelp_api = YelpAPI(consumer_key, consumer_secret, token, token_secret)
 
 # write output to file
-with open(output_file, 'wb') as fh:
+with open(output_file, 'w+b') as fh:
     writer = csv.writer(fh)
 
     # look here for the terms you can use for searching and their meaning
@@ -50,8 +54,12 @@ with open(output_file, 'wb') as fh:
             address   = biz.get('location').get('address')[0]
             zip_code  = biz.get('location').get('postal_code')
 
+            # geocode addresses
+            geo_results = Geocoder.geocode('%s, %s' % (address, zip_code))
+
+
             #old code: print '%s - %s - %s - %s' % (name, rating, address, zip_code)
-            writer.writerow([name, rating, address, zip_code])
+            writer.writerow([name, rating, address, zip_code, geo_results.latitude, geo_results.longitude])
 
 
 
